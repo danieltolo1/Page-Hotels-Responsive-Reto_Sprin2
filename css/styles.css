@@ -68,18 +68,19 @@ html{
     margin-top:10px;
     display: grid;
     grid-template-columns: 49% 49%;
-    grid-template-rows: auto;
+    
     grid-template-areas:"countries countries"
                         "date-from date-to"
                         "prices sizes"
                         ". clear";
     gap: 0.312rem;
+    grid-auto-rows: 24px;
 }
 
 .header__containerForm__gridCountries{
     grid-area: countries;
     width: 95%;
-    background: url();
+    background: url(../img/pin.svg);
 
 }
 
@@ -91,7 +92,6 @@ html{
     background-position-x: 0.312rem;
     background-position-y: center;
 }
-
 
 
 
