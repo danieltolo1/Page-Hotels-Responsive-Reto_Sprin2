@@ -9,12 +9,21 @@
     <script src="https://kit.fontawesome.com/e24ec5b62f.js" crossorigin="anonymous"></script>
 </head>
 <body>
+
+    <!-- ACA COMIENZA EL HEADER  -->
+
     <header class="header">
+
+            <!-- TITULO DE HEADER  -->
             <h1 class="header__title">Book it!</h1>
+
+            <!-- CONTENEDOR PARA FORMULARIO FONDO  -->
             <div class="header__containerForm">
                
+                <!-- CONTENDEDOR PARA REALIZAR EL GRID  -->
                 <div class="header__containerForm__grid"> 
-                        
+
+                    <!-- PRIMER SELECT DONDE SE ESCOGE EL PAIS DEL HOTEL  -->    
                     <select class="header__containerForm__gridCountries Filter-Icon" name="filter-countries" id="filter-countries" placeholder=" All countries ">
                         <option value="all"> All countries</option>
                         <option value="country1">Argentina</option>
@@ -22,22 +31,35 @@
                         <option value="country3">Chile</option>
                         <option value="country4">Uruguay</option>
                     </select>
-                    
-                    <input class="Filter__DateFrom Filter-Icon" name="date-from" id="date-from" min="2022-09-05" max="" type="date" value="">
-                    <input class="Filter__DateFrom Filter-Icon" name="date-from" id="date-from" min="2022-09-05" max="" type="date" value="">
+
+                    <!-- INPUTS PARA LAS FECHAS -->
+                    <input class="header__containerForm__gridDateto Filter-Icon" name="date-from" id="date-from" min="2022-09-05" max="" type="date" value="">
+                    <input class="header__containerForm__gridDateFrom Filter-Icon" name="date-from" id="date-from" min="2022-09-05" max="" type="date" value="">
+
+                    <!-- SELECTS PARA  PRECIOS Y TAMAÑO HABITACION -->
+                    <select class="header__containerForm__gridPrice Filter-Icon" name="filter-Price" id="filter-Price ">
+                        <option value="allPrice"> All prices</option>
+                        <option value="$"> $</option>
+                        <option value="$$">$$</option>
+                        <option value="$$$">$$$</option>
+                        <option value="$$$$">$$$$</option>
+                    </select>
+                    <select class="header__containerForm__gridSizes Filter-Icon" name="filter-Sizes" id="filter-Sizes ">
+                        <option value="allPrice"> All Sizes</option>
+                        <option value="Small"> Small</option>
+                        <option value="Medium">Medium</option>
+                        <option value="Large">Large</option>
+                    </select>
+                    <!-- BOTON PARA LIMPIAR  -->
+                    <button class="header__containerForm__gridButton">Clear</button>
                 </div>
 
             </div>
-
-
-
-
-
     </header>
 
 
 
 
-    
+    <script  src="./js/index.js"></script>
 </body>
 </html>
