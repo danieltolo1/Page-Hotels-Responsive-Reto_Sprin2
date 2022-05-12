@@ -129,10 +129,10 @@ html{
     width: 30%;
     border-radius: 5px;
     border: 1px solid #fff;
-    font-weight: 500;
     height: 1.35rem;
     margin-left: 70%;
-    
+    font-size:15px;
+    font-weight: bold;
 
 }
 
