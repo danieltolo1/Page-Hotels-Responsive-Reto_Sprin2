@@ -25,7 +25,7 @@ async function llamarHoteles (){
         } 
 
     });
-
+      sectionHotels.innerHTML="";
 
     filtros1.forEach((element) => {
 
