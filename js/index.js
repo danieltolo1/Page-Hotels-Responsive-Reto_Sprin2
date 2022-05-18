@@ -9,7 +9,12 @@ const filterPrice = document.getElementById("filter-Price");
 
 function ForEachFiltrado (filtros1) {
 
+<<<<<<< HEAD
     filtros1.forEach((element) => {
+=======
+  console.log(selectedOption)
+
+>>>>>>> e7cfe5d0d9a4167b23fd5366fb72b047b95e2173
 
         let   cardHotel = document.createElement("div");
         cardHotel.setAttribute("class", "card");
@@ -48,7 +53,11 @@ function ForEachCompleta (data) {
 async function llamarHoteles (){
     const response = await fetch('https://6256097e8646add390e01d99.mockapi.io/hotels/reservation/hotels');
     const data = await response.json();
-    
+   
+    const filtros = data.filter((element)=>{  
+        return  element.country == selectedOption.text;
+       
+});
 
 
     let filtros1 = data.filter((element, index) => {
